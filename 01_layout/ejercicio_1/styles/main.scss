@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+  @include container-style;
+  @include box-style;
+
+  margin-top: 100px;
+}
+
+.container-1 {
+  $base-bg-color: #ff0000;
+
+  @include color-tone($base-bg-color);
+}
+
+.container-2 {
+  $base-bg-color: #0000ff;
+
+  @include color-tone($base-bg-color);
+}
+
+.container-3 {
+  $base-bg-color: #008000;
+
+  @include color-tone($base-bg-color);
+}

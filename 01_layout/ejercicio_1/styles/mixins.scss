@@ -1,0 +1,39 @@
+@mixin color-tone($base-bg-color) {
+  .base-color {
+    background-color: $base-bg-color;
+    color: $font-color;
+  }
+
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      color: darken($base-color, $i * 5%);
+      background-color: darken($base-bg-color, $i * 5%);
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      color: lighten($base-color, $i * 5%);
+      background-color: lighten($base-bg-color, $i * 5%);
+    }
+  }
+}
+
+@mixin container-style {
+  @for $i from 1 through 3 {
+    .container-#{$i} {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@mixin box-style {
+  .box {
+    color: $base-color;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin: 20px 5px;
+  }
+}

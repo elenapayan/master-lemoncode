@@ -1,0 +1,30 @@
+.box {
+  border-radius: 10px;
+
+  &-color {
+    &-1 {
+      background-color: blue;
+    }
+    &-2 {
+      background-color: darkblue;
+    }
+    &-3 {
+      background-color: darkturquoise;
+    }
+  }
+
+  &-shadow {
+    box-shadow: 7px 10px 9px 1px #333333;
+  }
+}
+
+.text {
+  &-principal {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  &-secondary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

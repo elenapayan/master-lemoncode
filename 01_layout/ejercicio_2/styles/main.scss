@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+// @import "./theme1.scss";
+@import "./theme2.scss";
+
+.container {
+  font-family: "Architects Daughter", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.box {
+  color: #000000;
+  border: 1px solid #808080;
+  width: 72px;
+  padding: 20px 15px 30px;
+
+  &:last-child {
+    padding: 20px 15px;
+  }
+}

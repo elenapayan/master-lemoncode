@@ -1,0 +1,64 @@
+@import "./variables.scss";
+
+.card {
+  &__container {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto;
+    width: 300px;
+    padding: 10px 18px;
+    background-color: $bg-color-card-container;
+  }
+
+  &__content {
+    background-color: $bg-color-card-content;
+    border: 1px solid $border-color-card;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    &--container {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 16px;
+    }
+
+    &--title {
+      font-size: $font-size-xl;
+      font-weight: lighter;
+      line-height: $line-height-l;
+      margin-top: 12px;
+    }
+
+    &--description {
+      font-size: $font-size-s;
+      line-height: $line-height-m;
+    }
+
+    &--info {
+      font-size: $font-size-m;
+      text-align: end;
+      margin-top: 35px;
+
+      span {
+        color: $bg-color-button;
+      }
+    }
+
+    &--button {
+      font-size: $font-size-l;
+      background-color: $bg-color-button;
+      color: $color-button;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      height: 40px;
+      border: none;
+    }
+  }
+}

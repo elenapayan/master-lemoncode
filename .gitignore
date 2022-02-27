@@ -89,6 +89,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+transpiled
 
 # Gatsby files
 .cache/
@@ -130,5 +131,10 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
 # End of https://www.toptal.com/developers/gitignore/api/node
